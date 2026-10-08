@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://waitlist.veraecosystem.com/sitemap.xml
