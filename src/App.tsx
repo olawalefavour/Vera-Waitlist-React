@@ -33,9 +33,9 @@ function PartnerCarousel() {
     <div className="partner-carousel">
       <div className="partner-track" data-paused={paused}>
         {[0, 1, 2].map(copy => <div className="partner-line" key={copy} aria-hidden={copy > 0 ? true : undefined}>
-          <a href="https://skillswapafrica.com" target="_blank" rel="noreferrer" className="skillswap-crop" aria-label="SkillSwap Africa website" tabIndex={copy === 0 ? 0 : -1}><img src="/assets/skillswap-logo.png" alt={copy === 0 ? "SkillSwap Africa" : ""} width="2000" height="2000" /></a>
+          <a href="https://skillswapafrica.com" target="_blank" rel="noreferrer" className="skillswap-crop" aria-label="SkillSwap Africa website" tabIndex={copy === 0 ? 0 : -1}><img src="/assets/skillswap-logo.png" alt={copy === 0 ? "SkillSwap Africa" : ""} width="2000" height="2000" loading="lazy" decoding="async" /></a>
           <span className="partner-divider" />
-          <div className="partner-group"><img src="/assets/partner-logos.png" alt={copy === 0 ? "FUTA Techies, Global Trust Energy, Chase Financial Services, and Nino.ww" : ""} width="1080" height="1350" /></div>
+          <div className="partner-group"><img src="/assets/partner-logos.png" alt={copy === 0 ? "FUTA Techies, Global Trust Energy, Chase Financial Services, and Nino.ww" : ""} width="1080" height="1350" loading="lazy" decoding="async" /></div>
         </div>)}
       </div>
     </div>
@@ -127,7 +127,7 @@ export default function Home() {
       <main id="main">
         <section className="hero" aria-labelledby="hero-heading">
           <div className="hero-grid" aria-hidden="true" />
-          <div className="hero-top"><div><span className="eyebrow light"><span className="status-dot" /> A new beginning for bold ideas</span><h1 id="hero-heading">Great ideas.<br />Real evidence.<br /><span>Better beginnings.</span></h1></div><div className="hero-copy"><p>The world doesn’t need more guesswork.<br />It needs what you’re building.</p><p className="hero-description">Turn a promising idea into something people need. Discover real problems, explore possibilities with AI, and learn from real people.</p><button className="button white" onClick={() => openModal("waitlist")}>Join the waitlist</button><span className="access-note">Free to join. Built for what comes next.</span></div></div>
+          <div className="hero-top"><div><span className="eyebrow light"><span className="status-dot" /> A new beginning for bold ideas</span><h1 id="hero-heading">Validate your idea.<br />Before you<br /><span>build.</span></h1></div><div className="hero-copy"><p>The world doesn’t need more guesswork.<br />It needs what you’re building.</p><p className="hero-description">Validate a startup idea before you build. Discover real problems through market research, explore possibilities with AI, and learn from real people.</p><button className="button white" onClick={() => openModal("waitlist")}>Join the waitlist</button><span className="access-note">Free to join. Built for what comes next.</span></div></div>
           <div className="hero-pillars"><span><BookOpen /> Real-world research</span><span><Sparkles /> AI-powered exploration</span><span><Users /> Real human feedback</span></div>
           <div className="hero-cards">
             <div className="research-card">
